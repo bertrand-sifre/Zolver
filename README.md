@@ -10,6 +10,8 @@ developed by 4 EPITA students. It aims to solve computer generated and real jigs
 A short video presentation is available [here](https://www.youtube.com/watch?v=Oq36FtMg0-k)
 
 A jigsaw puzzle
+
+I make a web-interface for this project on 2019. All-in Docker for simplify the dependencies.
 <p align="center">
 <img src="resources/jigsaw-samples/van-gogh.png" width="600">
 </p>
@@ -20,24 +22,9 @@ Zolver reconstruction
 
 ## Requirements
 
-- numpy>=1.11.0
-- scipy==1.0.0
-- opencv_python==3.3.0.10
-- scikit_image==0.13.1
-- matplotlib==2.1.0
-- Pillow
-- PyQt5>=5.0
-- skimage
-- scikit_learn>=0.18.1
+* All-in a Docker container
 
 ## Usage
-### With GUI
-Use `python3 main.py`
-
-
-### Without GUI
-Use `python3 main_no_gui.py path/to/image`
-
 
 ## Zolver overview
 
@@ -70,12 +57,12 @@ Zolver is likely to make an error. Zolver will always try to fill the empty spac
 number of edges already filled.
 
 ## Authors
+Web-interface Docker.
+* Bertrand Sifré
+
 SCIA 2018 - EPITA
 
 * Cyril Cetre
 * Denis Castéran
 * Jérémy Lugand
 * Hugo Rybinski
-
-![Screenshot](resources/jigsaw-solved/craies_32.png)
-![Screenshot](resources/jigsaw-solved/link.png)
