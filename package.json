@@ -10,8 +10,8 @@
   },
   "homepage": "https://github.com/bertrand-sifre/Zolver#readme",
   "scripts": {
-    "api": "forever --watch --watchDirectory ./src/api ./src/api/index.js",
-    "server": "vue-cli-service serve src/vuejs/main.js",
+    "dev:api": "forever --watch --watchDirectory ./src/api ./src/api/index.js",
+    "dev:server": "vue-cli-service serve src/vuejs/main.js",
     "build": "vue-cli-service build src/vuejs/main.js",
     "lint": "vue-cli-service lint src/vuejs/main.js"
   },
