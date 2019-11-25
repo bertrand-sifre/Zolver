@@ -32,7 +32,7 @@ app.get('/images', (req, resp) => {
 
 app.post('/compute/:img_id', (req, resp) => {
   // send cmd to python
-  const python = spawn('python3', ['/Zolver/src/python/main_no_gui.py', '/Zolver/uploads/' + req.params.img_id])
+  const python = spawn('python3', ['/Zolver/src/python/main_no_gui.py', '/Zolver/uploads/' + req.params.img_id], {shell: true})
   python.stdout.on('data', (data) => {
     Socket.socket.emit('logs:update', {msg: data.toString()})
   })
