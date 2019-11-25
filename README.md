@@ -23,9 +23,21 @@ Zolver reconstruction
 ## Requirements
 
 * All-in a Docker container
-
+* Just a docker deamon on your PC (Unix or Windows)
 ## Usage
 
+Clone this repository.
+Build the docker image with this command
+```
+docker build -t zolver .
+```
+Launch the app with this command
+```
+docker run -it -p 3000:3000 -p 3001:3001 -p 8080:8080 zolver
+```
+The application start on http://localhost:8080
+
+Press Ctrl+Z to kill the app.
 ## Zolver overview
 
 ### Preprocessing
@@ -57,7 +69,7 @@ Zolver is likely to make an error. Zolver will always try to fill the empty spac
 number of edges already filled.
 
 ## Authors
-Web-interface Docker.
+Web-interface and Docker configuration.
 * Bertrand Sifré
 
 SCIA 2018 - EPITA

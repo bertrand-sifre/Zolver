@@ -15,4 +15,4 @@ RUN pip3 install -r /Zolver/src/python/requirements.txt
 
 WORKDIR /Zolver
 RUN npm i
-CMD ["node_modules/.bin/npm-run-all", "--parallel", "api", "server"]
+CMD ["node_modules/.bin/npm-run-all", "--parallel", "dev:*"]
